@@ -1,0 +1,5 @@
+*.o
+*.xlsx
+test
+NsightCollection
+__pycache__

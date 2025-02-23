@@ -1,0 +1,9 @@
+#!/usr/bin/expect
+
+set ncu_cmd [lindex $argv 0]
+
+set timeout 1
+spawn su root -c $ncu_cmd
+expect "Password:"
+send "YOUR SUDO PASSWD\r"
+interact
